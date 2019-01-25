@@ -4,42 +4,28 @@ export const styles = StyleSheet.create({
     viewLogo: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 50
+        marginTop: 110
     },
     backIcon: {
-        width: 35,
-        height: 25,
-        marginLeft: 20,
-        marginTop: 40
+        marginLeft: 30,
+        marginTop: 50
     },
     txtEmail: {
         textAlign: 'left',
-        marginLeft: 25,
-        marginRight: 25,
-        paddingLeft: 20,
-        height: 50,
+        marginLeft: 30,
+        marginRight: 30,
+        height: 45,
         color: 'black',
-        borderRadius: 30,
-        backgroundColor: "rgb(255,255,255)",
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-        shadowColor: 'gray',
-        shadowOffset: { height: 0, width: 0 },
+        fontSize: 18
     },
     txtPwd: {
         textAlign: 'left',
-        marginLeft: 25,
-        marginRight: 25,
+        marginLeft: 30,
+        marginRight: 30,
         marginTop: 26,
-        paddingLeft: 20,
-        height: 50,
+        height: 45,
         color: 'black',
-        borderRadius: 30,
-        backgroundColor: "rgb(255,255,255)",
-        shadowOpacity: 0.5,
-        shadowRadius: 3,
-        shadowColor: 'gray',
-        shadowOffset: { height: 0, width: 0 },
+        fontSize: 18
     },
     txtForPwd: {
         alignSelf: "flex-end",
@@ -48,21 +34,42 @@ export const styles = StyleSheet.create({
         marginRight: 25,
         marginTop: 30
     },
-    viewBtnLogin: {
+    viewBtnSign: {
         height: 45,
-        marginTop: 35,
+        marginTop: 70,
         borderWidth: 1,
-        borderColor: 'white',
-        borderRadius: 30,
+        borderColor: 'black',
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 25,
-        marginRight: 25
+        marginRight: 25,
+        shadowRadius: 3,
+        shadowColor: 'gray',
+    },
+    viewBtnLogin: {
+        height: 45,
+        marginTop: 30,
+        borderWidth: 1,
+        borderColor: 'black',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: 25,
+        marginRight: 25,
+        shadowRadius: 3,
+        shadowColor: 'gray',
     },
     btnTxtLogin: {
         textAlign: 'center',
         fontSize: 16,
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold'
+    },
+    viewLine: {
+        marginHorizontal: 30,
+        height: 1,
+        backgroundColor: 'black',
+        shadowOpacity: 0.5,
+        shadowRadius: 4,
+        shadowColor: 'black',
     },
 })

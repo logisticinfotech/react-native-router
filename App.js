@@ -7,10 +7,7 @@
  */
 
 import React, { Component } from 'react';
-import { AsyncStorage, Platform, StyleSheet, Text, View, ImageBackground, Image, TextInput, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
-import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import Login from './src/Login/Login';
-import Signup from './src/Login/Signup';
+import { AsyncStorage } from 'react-native';
 import * as constant from './src/Helper/Constants'
 import LoginRouter from './src/Router/LoginRouter'
 import TabRouter from './src/Router/TabRouter'
@@ -33,6 +30,10 @@ export default class App extends Component {
         context.setState({ isLoggedIn: true });
       }, 100);
     });
+    constant.commonConstant.emitter.addListener("logout", function (x) {
+      console.log(x);
+      context.setState({ isLoggedIn: false });
+    });
   }
 
   componentDidMount() {
@@ -46,7 +47,7 @@ export default class App extends Component {
         });
 
       } else {
-        
+
         global.isLoggedIn = false;
         this.setState({
           isLoggedIn: false,
@@ -58,7 +59,6 @@ export default class App extends Component {
   }
   render() {
     console.disableYellowBox = true;
-
     if (this.state.isLoggedIn) {
       return (
         <TabRouter />
@@ -69,7 +69,5 @@ export default class App extends Component {
 
       );
     }
-    //);
   }
 }
-// export default App;

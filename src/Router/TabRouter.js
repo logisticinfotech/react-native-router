@@ -18,7 +18,7 @@ const mainTab = createBottomTabNavigator(
         tabBarPosition: "bottom",
         animationEnabled: false,
         tabBarOptions: {
-            activeTintColor: 'rgb(125,107,255)',
+            activeTintColor: 'rgb(58,143,181)',
             indicatorStyle: {
                 backgroundColor: "#A1A1A1",
                 height: 1,
